@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/ANIMAFOX/AndroidStudioProjects/PocketSchool/app/src/main/res/layout/Home.xml" value="0.1" />
+        <entry key="..\:/Users/ANIMAFOX/AndroidStudioProjects/PocketSchool/app/src/main/res/layout/activity_chat.xml" value="0.20885416666666667" />
+        <entry key="..\:/Users/ANIMAFOX/AndroidStudioProjects/PocketSchool/app/src/main/res/layout/activity_chat_main.xml" value="0.25" />
+        <entry key="..\:/Users/ANIMAFOX/AndroidStudioProjects/PocketSchool/app/src/main/res/layout/activity_chats_main.xml" value="0.3383152173913043" />
+        <entry key="..\:/Users/ANIMAFOX/AndroidStudioProjects/PocketSchool/app/src/main/res/layout/activity_home.xml" value="0.33" />
+        <entry key="..\:/Users/ANIMAFOX/AndroidStudioProjects/PocketSchool/app/src/main/res/layout/activity_home_main.xml" value="0.33" />
+        <entry key="..\:/Users/ANIMAFOX/AndroidStudioProjects/PocketSchool/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/ANIMAFOX/AndroidStudioProjects/PocketSchool/app/src/main/res/layout/activity_perfil_main.xml" value="0.25" />
+        <entry key="..\:/Users/ANIMAFOX/AndroidStudioProjects/PocketSchool/app/src/main/res/layout/activity_recompensa_main.xml" value="0.25" />
+        <entry key="..\:/Users/ANIMAFOX/AndroidStudioProjects/PocketSchool/app/src/main/res/layout/activity_rewards_main.xml" value="0.3383152173913043" />
+        <entry key="..\:/Users/ANIMAFOX/AndroidStudioProjects/PocketSchool/app/src/main/res/layout/activity_sub_gmain.xml" value="0.20885416666666667" />
+        <entry key="..\:/Users/ANIMAFOX/AndroidStudioProjects/PocketSchool/app/src/main/res/layout/activity_sub_grupo.xml" value="0.20885416666666667" />
+        <entry key="..\:/Users/ANIMAFOX/AndroidStudioProjects/PocketSchool/app/src/main/res/layout/activity_subgrupo_main.xml" value="0.3383152173913043" />
+        <entry key="..\:/Users/ANIMAFOX/AndroidStudioProjects/PocketSchool/app/src/main/res/layout/activity_tarea_crear_main.xml" value="0.3383152173913043" />
+        <entry key="..\:/Users/ANIMAFOX/AndroidStudioProjects/PocketSchool/app/src/main/res/layout/activity_tarea_main.xml" value="0.2" />
+        <entry key="..\:/Users/ANIMAFOX/AndroidStudioProjects/PocketSchool/app/src/main/res/layout/activity_tarea_ver_main.xml" value="0.3383152173913043" />
+        <entry key="..\:/Users/ANIMAFOX/AndroidStudioProjects/PocketSchool/app/src/main/res/layout/activity_tareas_main.xml" value="0.3383152173913043" />
+        <entry key="..\:/Users/ANIMAFOX/AndroidStudioProjects/PocketSchool/app/src/main/res/layout/activity_usuario_main.xml" value="0.3383152173913043" />
+        <entry key="..\:/Users/ANIMAFOX/AndroidStudioProjects/PocketSchool/app/src/main/res/layout/home_main.xml" value="0.24166666666666667" />
+        <entry key="..\:/Users/bjls2/Documents/FCFM/POI/PocketSchool2/PocketSchool/app/src/main/res/layout/activity_main.xml" value="0.2994791666666667" />
+        <entry key="..\:/Users/bjls2/Documents/FCFM/POI/PocketSchool2/PocketSchool/app/src/main/res/layout/activity_register.xml" value="0.33" />
+        <entry key="..\:/Users/bjls2/Documents/FCFM/POI/PocketSchool4/PocketSchool/app/src/main/res/layout/activity_home.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/bjls2/Documents/FCFM/POI/PocketSchool4/PocketSchool/app/src/main/res/layout/activity_main.xml" value="0.271875" />
+        <entry key="..\:/Users/bjls2/Documents/FCFM/POI/PocketSchool4/PocketSchool/app/src/main/res/layout/activity_register.xml" value="0.271875" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
