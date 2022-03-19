@@ -8,45 +8,18 @@
 
 
     <TextView
-        android:id="@+id/textView16"
-        android:layout_width="379dp"
-        android:layout_height="73dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="56dp"
-        android:layout_marginEnd="16dp"
-        android:background="#FFE79E"
-        android:text="Grupo2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView15" />
-
-    <TextView
         android:id="@+id/textView15"
         android:layout_width="379dp"
         android:layout_height="73dp"
         android:layout_marginStart="16dp"
+        android:layout_marginTop="44dp"
         android:layout_marginEnd="16dp"
         android:background="#FFE79E"
         android:text="Grupo1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="108dp" />
-
-    <TextView
-        android:id="@+id/textView14"
-        android:layout_width="379dp"
-        android:layout_height="73dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="76dp"
-        android:layout_marginEnd="16dp"
-        android:background="#FFE79E"
-        android:text="Grupo3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_goback" />
 
     <TextView
         android:id="@+id/btn_goback"
@@ -71,6 +44,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <LinearLayout
+        android:id="@+id/linearLayout5"
         android:layout_width="409dp"
         android:layout_height="50dp"
         android:orientation="horizontal"
@@ -78,44 +52,56 @@
         app:layout_constraintEnd_toEndOf="parent">
 
         <ImageButton
-        android:id="@+id/btn_chats"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:background="#00FFFFFF"
-        android:minHeight="48dp"
-        app:srcCompat="@android:drawable/ic_dialog_email"
-        tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck" />
+            android:id="@+id/btn_chats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#00FFFFFF"
+            android:minHeight="48dp"
+            app:srcCompat="@android:drawable/ic_dialog_email"
+            tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck" />
 
-    <ImageButton
-        android:id="@+id/btn_perfil"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:background="#00FFFFFF"
-        android:minHeight="48dp"
-        app:srcCompat="@android:drawable/ic_menu_preferences"
-        tools:ignore="SpeakableTextPresentCheck" />
+        <ImageButton
+            android:id="@+id/btn_perfil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#00FFFFFF"
+            android:minHeight="48dp"
+            app:srcCompat="@android:drawable/ic_menu_preferences"
+            tools:ignore="SpeakableTextPresentCheck" />
 
-    <ImageButton
-        android:id="@+id/btn_recompensa"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:background="#00FFFFFF"
-        android:minHeight="48dp"
-        app:srcCompat="@android:drawable/btn_star"
-        tools:ignore="SpeakableTextPresentCheck" />
+        <ImageButton
+            android:id="@+id/btn_recompensa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#00FFFFFF"
+            android:minHeight="48dp"
+            app:srcCompat="@android:drawable/btn_star"
+            tools:ignore="SpeakableTextPresentCheck" />
 
-    <ImageButton
-        android:id="@+id/btn_tarea"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:background="#00FFFFFF"
-        android:minHeight="48dp"
-        app:srcCompat="@android:drawable/ic_input_get"
-        tools:ignore="SpeakableTextPresentCheck" />
+        <ImageButton
+            android:id="@+id/btn_tarea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#00FFFFFF"
+            android:minHeight="48dp"
+            app:srcCompat="@android:drawable/ic_input_get"
+            tools:ignore="SpeakableTextPresentCheck" />
     </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Crear Grupo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.867"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.807" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

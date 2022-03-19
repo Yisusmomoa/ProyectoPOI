@@ -3,12 +3,53 @@ package com.example.POI
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.ImageButton
+import android.widget.ImageView
+import android.widget.TextView
+import com.example.POI.ModelClasses.Users
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.FirebaseUser
+import com.google.firebase.database.*
+import com.squareup.picasso.Picasso
 
 class Perfil_main : AppCompatActivity() {
+
+    var refUsers:DatabaseReference?=null
+    var firebaseUser:FirebaseUser?=null
+
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_perfil_main)
+
+        //Usuario logeado, mostrar info
+        firebaseUser=FirebaseAuth.getInstance().currentUser
+        refUsers=FirebaseDatabase.getInstance().reference.child("Users").child(firebaseUser!!.uid)
+
+
+        //mostrar info del usuario e imagen de usuario
+        var userNameInfo=findViewById<TextView>(R.id.textViewInfoUser)
+        var photoUserInfo=findViewById<ImageView>(R.id.imageViewInfoUser)
+
+        refUsers!!.addValueEventListener(object :ValueEventListener{
+            override fun onDataChange(snapshot: DataSnapshot) {
+                if(snapshot.exists()){
+                    val user:Users?=snapshot.getValue(Users::class.java)
+                    userNameInfo.setText(user!!.getUsername())
+
+                    Picasso.get().load(user.getProfile()).placeholder(R.drawable.profile).into(photoUserInfo)
+
+                }
+            }
+
+            override fun onCancelled(error: DatabaseError) {
+                Log.d("FirebaseError","${error.message}")
+            }
+        })
+
+
 
         val Subgrupo = this.findViewById<ImageButton>(R.id.btn_sgrupo)
         val Chat = this.findViewById<ImageButton>(R.id.btn_chats)

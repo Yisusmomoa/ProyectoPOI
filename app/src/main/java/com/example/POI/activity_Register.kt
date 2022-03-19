@@ -55,8 +55,6 @@ class activity_Register : AppCompatActivity() {
                         userHashMap["profile"]="https://firebasestorage.googleapis.com/v0/b/messengerpoi2.appspot.com/o/profile.png?alt=media&token=dcbc6c9e-7bdb-4453-afac-4d9e6b913c38"
                         userHashMap["status"]="offline"
                         userHashMap["search"]=username.toLowerCase()
-                        userHashMap["status"]="offline"
-                        userHashMap["status"]="offline"
 
                         refUsers.updateChildren(userHashMap)
                             .addOnCompleteListener {
@@ -80,12 +78,5 @@ class activity_Register : AppCompatActivity() {
         }
 
     }
-
-    class User(uid:String, username:String,email:String, pass:String){
-
-    }
-
-
-
 
 }

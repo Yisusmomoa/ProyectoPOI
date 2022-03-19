@@ -25,12 +25,7 @@ class MainActivity : AppCompatActivity() {
         val Registrar=findViewById<Button>(R.id.btn_signup)
 
         Singup.setOnClickListener{
-
             loginUser()
-
-            val VentanaHome: Intent = Intent(applicationContext,Home::class.java)
-            startActivity(VentanaHome)
-
         }
 
         Registrar.setOnClickListener {
