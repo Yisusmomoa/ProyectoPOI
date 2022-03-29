@@ -56,7 +56,8 @@ class ChatsFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        val view= inflater.inflate(R.layout.fragment_chats, container, false)
+        val view= inflater.inflate(R.layout.fragment_chats,
+            container, false)
 
         recycler_view_chatlist=view.findViewById(R.id.recycler_view_chatlist)
         recycler_view_chatlist.setHasFixedSize(true)
@@ -118,7 +119,6 @@ class ChatsFragment : Fragment() {
         mUsers=ArrayList()
         val ref=FirebaseDatabase.getInstance().reference.child("Users")
         ref!!.addValueEventListener(object :ValueEventListener{
-
             override fun onDataChange(p0: DataSnapshot) {
                 (mUsers as ArrayList).clear()
 

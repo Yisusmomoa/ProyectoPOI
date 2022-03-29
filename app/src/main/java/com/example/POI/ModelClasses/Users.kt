@@ -8,7 +8,8 @@ class Users {
     private var search:String=""
 
     constructor()
-    constructor(uid: String, username: String, profile: String, status: String, search: String) {
+    constructor(uid: String, username: String, profile: String,
+                status: String, search: String) {
         this.uid = uid
         this.username = username
         this.profile = profile

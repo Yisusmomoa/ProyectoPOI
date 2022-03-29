@@ -8,24 +8,10 @@
 
 
     <TextView
-        android:id="@+id/textView15"
-        android:layout_width="379dp"
-        android:layout_height="73dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="44dp"
-        android:layout_marginEnd="16dp"
-        android:background="#FFE79E"
-        android:text="Grupo1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_goback" />
-
-    <TextView
         android:id="@+id/btn_goback"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="16dp"
         android:fontFamily="@font/bevan"
         android:text="Mis Grupos"
         android:textAlignment="center"
@@ -93,15 +79,31 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btn_CrearGrupo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Crear Grupo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.867"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.807" />
+        app:layout_constraintVertical_bias="0.863" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvGrupos"
+        android:layout_width="0dp"
+        android:layout_height="378dp"
+        android:layout_marginTop="4dp"
+        android:paddingLeft="125dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_goback"
+
+        app:layout_constraintVertical_bias="0.217"
+        tools:listitem="@layout/grupo_lista" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

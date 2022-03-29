@@ -79,9 +79,10 @@ class MessageChatActivity : AppCompatActivity() {
 
         reference=FirebaseDatabase.getInstance().reference
             .child("Users").child(userIdVisit)
+        //esta escuchando si hay algún cambio en alguna rama, en este caso users
         reference!!.addValueEventListener(object : ValueEventListener {
             override fun onDataChange(p0: DataSnapshot) {
-
+//esta escuchando si hay algún cambio en alguna rama, en este caso users
                 val user:Users?=p0.getValue(Users::class.java)
                 username_mchat.text=user!!.getUsername()
                 Picasso.get().load(user.getProfile()).into(profile_image_mchat)
@@ -279,7 +280,8 @@ class MessageChatActivity : AppCompatActivity() {
         }
     }
 
-    private fun retrieveMessages(senderId: String, receiverId: String, receiverImageUrl: String) {
+    private fun retrieveMessages(senderId: String, receiverId: String,
+                                 receiverImageUrl: String) {
         mChatList=ArrayList()
         val reference=FirebaseDatabase.getInstance().reference.child("Chats")
 
@@ -297,8 +299,10 @@ class MessageChatActivity : AppCompatActivity() {
                         val fecha=dateFormater?.format(chat?.getTimeStamp() as Long)
                         chat?.setTimeStamp(fecha!!)
                     }
-                    if (chat!!.getReceiver().equals(senderId) && chat.getSender().equals(receiverId)
-                        || chat.getReceiver().equals(receiverId) && chat.getSender().equals(senderId)){
+                    if (chat!!.getReceiver().equals(senderId) &&
+                        chat.getSender().equals(receiverId)
+                        || chat.getReceiver().equals(receiverId) &&
+                        chat.getSender().equals(senderId)){
                         (mChatList as ArrayList<Chat>).add(chat)
                     }
                     chatsAdapter= ChatsAdapter(this@MessageChatActivity,(mChatList as ArrayList<Chat>),receiverImageUrl!!)

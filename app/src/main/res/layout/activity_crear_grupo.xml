@@ -30,21 +30,21 @@
             app:layout_constraintVertical_bias="0.217" />
 
         <EditText
-            android:id="@+id/NombreGrupo"
-            android:layout_width="wrap_content"
+            android:id="@+id/txt_NombreGrupo"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_below="@id/textView9"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="0dp"
-            android:text="NombreGrupo"
-            android:layout_margin="1dp"
-            >
-        </EditText>
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="1dp"></EditText>
+
         <Button
-            android:id="@+id/CrearGrupo"
+            android:id="@+id/Btn_CrearGrupo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/NombreGrupo"
+            android:layout_below="@id/txt_NombreGrupo"
             android:layout_centerHorizontal="true"
             android:text="Crear Grupo"
 
